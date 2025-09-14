@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "Destination Alarm",
+    "slug": "destination-alarm",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#8B5CF6"
+      },
+      "package": "com.destinationalarm.app",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "versionCode": 1,
+      "config": {
+        "googleMaps": {
+          "apiKey": "your-google-maps-api-key"
+        }
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-location"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "2890cbd6-1d40-4e29-94fd-8c4bd3b5277c"
+      }
+    }
+  }
+}

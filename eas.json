@@ -1,21 +1,26 @@
 {
   "cli": {
-    "version": ">= 5.9.1"
+    "version": ">= 5.9.1",
+    "appVersionSource": "remote"
   },
   "build": {
     "preview": {
       "android": {
-        "buildType": "apk"
+        "buildType": "apk",
+        "credentialsSource": "remote"
+      },
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://api.example.com"
       }
     },
-    "preview2": {
+    "production": {
       "android": {
-        "gradleCommand": ":app:assembleRelease"
+        "buildType": "app-bundle",
+        "credentialsSource": "remote"
       }
-    },
-    "preview3": {
-      "developmentClient": true
-    },
+    }
+  },
+  "submit": {
     "production": {}
   }
 }

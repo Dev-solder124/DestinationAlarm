@@ -1,13 +1,9 @@
-import { useEffect } from 'react';
-
-declare global {
-  interface Window {
-    frameworkReady?: () => void;
-  }
-}
+﻿import { useEffect } from 'react';
 
 export function useFrameworkReady() {
   useEffect(() => {
-    window.frameworkReady?.();
-  });
+    // This hook is not needed for React Native
+    // window object doesn't exist in React Native
+    console.log('Framework ready');
+  }, []);
 }

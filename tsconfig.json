@@ -4,8 +4,13 @@
     "strict": true,
     "paths": {
       "@/*": ["./*"]
-    }
-    , "jsx": "react-native"
+    },
+    "jsx": "react-native",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "types": ["node"],
+    "noImplicitAny": true
   },
   "include": [
     "**/*.ts",

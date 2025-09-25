@@ -1,0 +1,30 @@
+name: wakemethere
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.3.1
+  provider: ^6.1.5+1
+  go_router: ^16.2.4
+  google_maps_flutter: ^2.13.1
+  geolocator: ^14.0.2
+  flutter_local_notifications: ^19.4.2
+  shared_preferences: ^2.5.3
+  permission_handler: ^12.0.1
+  geocoding: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
